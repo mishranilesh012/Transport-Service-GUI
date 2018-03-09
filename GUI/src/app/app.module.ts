@@ -11,6 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { CustomerMyOrdersComponent } from './customer-my-orders/customer-my-orders.component';
 import { ProductCategoriesComponent } from './product-categories/product-categories.component';
 import { CustomerPlaceordersComponent } from './customer-placeorders/customer-placeorders.component';
+import { LoginComponent } from './login/login.component';
+import { ShipperRegisterComponent } from './shipper-register/shipper-register.component';
+import { CarrierRegisterComponent } from './carrier-register/carrier-register.component';
 
 const appRoutes: Routes = [
   {
@@ -28,6 +31,18 @@ const appRoutes: Routes = [
   {
     path:'customer-placeorders',
     component:CustomerPlaceordersComponent
+  },
+  {
+    path:'login',
+    component: LoginComponent
+  },
+  {
+    path:'shipper-register',
+    component:ShipperRegisterComponent
+  },
+  {
+    path:'carrier-register',
+    component: CarrierRegisterComponent
   }
 ]
 @NgModule({
@@ -38,7 +53,10 @@ const appRoutes: Routes = [
     FooterComponent,
     CustomerMyOrdersComponent,
     ProductCategoriesComponent,
-    CustomerPlaceordersComponent
+    CustomerPlaceordersComponent,
+    LoginComponent,
+    ShipperRegisterComponent,
+    CarrierRegisterComponent
   ],
   imports: [
     BrowserModule,

@@ -6,8 +6,39 @@
           <h3><span id="h3">TRUCK</span>BULAO</h3>
           <p id="p1">CUSTOMERS, meet TRANSPORTERS <br>and<br> TRANSPORTERS, meets CUSTOMERS</p>
           <p id="p2">We make transporting big stuff cheap and easy by helping customers directly connect with transporters who have extra truck space.</p>
-          <button type="button" class="btn btn-light login" routerLink="/product-categories"><i class="fa fa-user-circle"></i>  LOGIN</button>
-          <button type="button" class="btn btn-light register"><i class="fa fa-address-book"></i>  REGISTER</button>
+          <button type="button" class="btn btn-light login" [routerLink]="['/login']"><i class="fa fa-user-circle"></i>  LOGIN</button>
+          <button type="button" class="btn btn-light register" (click)="open(content)"><i class="fa fa-address-book"></i>  REGISTER</button>
         </div>
       </ng-template>
   </ngb-carousel>
+
+
+
+  <ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">CHOOSE YOURSELF:</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-6">
+          <figure class="figure">
+            <img src="assets/images/ship.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          </figure>
+          <div id="bt1">
+            <button type="button" class="btn btn-secondary" (click)="c('Close click')" [routerLink]="['/carrier-register']">Carrier</button>
+          </div>
+        </div>
+        <div class="col-6">
+          <figure class="figure">
+            <img src="assets/images/shipper.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          </figure>
+          <div id="bt2">
+            <button type="button" class="btn btn-secondary" (click)="c('Close click')" [routerLink]="['/shipper-register']">Shipper</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
