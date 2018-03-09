@@ -1,0 +1,15 @@
+
+  .box-shadow { 
+    -webkit-box-shadow: 0px 7px 28px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 7px 28px -5px rgba(0,0,0,0.75);
+box-shadow: 0px 7px 28px -5px rgba(0,0,0,0.75); 
+  }
+  
+  .head {
+    text-align: center;
+  }
+  
+  .jumb{
+    margin-top: 50px;
+  }
+

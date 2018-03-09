@@ -1,0 +1,93 @@
+<section class="jumbotron text-center">
+    <div class="container jumb">
+      <h1 class="jumbotron-heading" style="font-size: 60px; font-family: 'Acme', sans-serif;">Product Details</h1>
+    </div>
+  </section>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-8">
+            <div class="card">
+                 <div class="card-body">
+                     <h3 id="h3">Create Listing</h3><hr><br>
+                    <form>
+                        <div class="form-group">
+                          <label>Description:</label>
+                          <textarea class="form-control" rows="3" placeholder="Enter Product description"></textarea><br>
+                          <label>Dimensions:<b>(Size in 'cm')</b></label>
+                       </div>
+                       <div class="form-row size">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Length">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Width">
+                            </div>
+                            <div class="col">
+                                 <input type="text" class="form-control" placeholder="Height">
+                            </div>
+                          </div><br>
+                          <div class="form-group">
+                                <label>Weight:<b>(in 'Kg')</b></label>
+                                <input type="text" class="form-control" placeholder="Enter product weight">
+                          </div><br>
+                          <div class="form-group">
+                                <label>Quantity:<b>(in 'Numbers')</b></label>
+                                <input type="text" class="form-control" placeholder="Enter total number of items">
+                          </div><br>
+                          <div class="form-group">
+                                <label>Upload Images:<b>(Any E-commerce Link)</b> </label>
+                                <input type="file" class="form-control-file">
+                          </div><br>
+                          <div class="form-row">
+                              <div class="col">
+                                    <div class="form-group">
+                                        <label>Source Address:</label>
+                                        <textarea class="form-control" rows="3" placeholder="Enter Product description"></textarea>
+                                    </div>
+                              </div>
+                              <div class="col">
+                                    <div class="form-group">
+                                        <label>Destination Address:</label>
+                                        <textarea class="form-control" rows="3" placeholder="Enter Product description"></textarea>
+                                    </div>
+                              </div>
+                          </div>
+                          <br>
+                          <div class="form-group">
+                                <label>Receiver's Contact Number:</label>
+                                <input type="text" class="form-control" placeholder="Enter receiver's contact number">
+                          </div><br>
+                          <div class="form-row">
+                                <div class="col">
+                                      <div class="form-group">
+                                          <label>Pickup Date:</label><br>
+                                          <ngb-datepicker #pd [(ngModel)]="model1" [ngModelOptions]="{standalone: true}" (navigate)="date = $event.next"></ngb-datepicker>
+                                         <!-- <pre>Month: {{ date.month }}.{{ date.year }}</pre> -->
+                                          <!-- <pre>Model: {{ model1 | json }}</pre> -->
+                                      </div>
+                                </div>
+                                <div class="col">
+                                      <div class="form-group">
+                                          <label>Delivery Date:</label><br>
+                                          <ngb-datepicker #dp [(ngModel)]="model2" [ngModelOptions]="{standalone: true}" (navigate)="date = $event.next"></ngb-datepicker>
+                                          <!-- <pre>Month: {{ date.month }}.{{ date.year }}</pre> -->
+                                          <!-- <pre>Model: {{ model2 | json }}</pre> -->
+                                      </div>
+                                </div>
+                            </div>
+
+                            <!-- Button -->
+                            <button type="button" class="btn btn-secondary btn-lg but">Place Order</button>
+                    </form>
+                 </div>
+            </div>
+          </div>
+          <div class="col-4">
+                <figure class="figure">
+                        <img src="assets/images/measure.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                        <figcaption class="figure-caption">Measuring the product</figcaption>
+                </figure>
+          </div>
+      </div>
+  </div><br><br><br><br> 

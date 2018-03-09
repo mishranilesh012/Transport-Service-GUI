@@ -1,0 +1,138 @@
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container jumb">
+      <h1 class="jumbotron-heading" style="font-size: 60px; font-family: 'Acme', sans-serif;">Product Categories</h1>
+      <p class="lead text-muted" style="font-size: 30px; font-family: 'Acme', sans-serif;">New Delivery</p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="assets/images/appliances.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text head">Appliances</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="row">
+                  <div class="col-9"></div>
+                  <div class="col-3">
+                     <a (click)="selectType($event)" id="Appliances" class="btn btn-md btn-outline-secondary" [routerLink]="['/customer-placeorders']">Proceed</a>
+                  </div>
+                  <!-- <div class="col-3"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="assets/images/furniture1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text head">Furniture</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="row">
+                  <div class="col-9"></div>
+                  <div class="col-3">
+                     <a (click)="selectType($event)" id="Furniture" class="btn btn-md btn-outline-secondary" routerLink="/product-order">Proceed</a>
+                  </div>
+                  <!-- <div class="col-3"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="assets/images/electronic.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text head">Home Electronic</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="row">
+                  <div class="col-9"></div>
+                  <div class="col-3">
+                     <a (click)="selectType($event)" id="Home Electronic" class="btn btn-md btn-outline-secondary" routerLink="/product-order">Proceed</a>
+                  </div>
+                  <!-- <div class="col-3"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="assets/images/art.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text head">Art and Glass</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="row">
+                  <div class="col-9"></div>
+                  <div class="col-3">
+                     <a (click)="selectType($event)" id="Art and Glass" class="btn btn-md btn-outline-secondary" routerLink="/product-order">Proceed</a>
+                  </div>
+                  <!-- <div class="col-3"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="assets/images/apartment.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text head">Apartment Moves</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="row">
+                  <div class="col-9"></div>
+                  <div class="col-3">
+                     <a (click)="selectType($event)" id="Apartment Moves" class="btn btn-md btn-outline-secondary" routerLink="/product-order">Proceed</a>
+                  </div>
+                  <!-- <div class="col-3"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="assets/images/office.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text head">Office Moves</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="row">
+                  <div class="col-9"></div>
+                  <div class="col-3">
+                     <a (click)="selectType($event)" id="Office Moves" class="btn btn-md btn-outline-secondary" routerLink="/product-order">Proceed</a>
+                  </div>
+                  <!-- <div class="col-3"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="assets/images/other.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text head">Others</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="row">
+                  <div class="col-9"></div>
+                  <div class="col-3">
+                     <a (click)="selectType($event)" id="Others" class="btn btn-md btn-outline-secondary" routerLink="/product-order">Proceed</a>
+                  </div>
+                  <!-- <div class="col-3"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
