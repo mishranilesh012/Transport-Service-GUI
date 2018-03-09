@@ -1,0 +1,33 @@
+.body{
+    padding-top: 150px;
+    /*background-image: linear-gradient(to left bottom, #bdcbe0, #d0d7e8, #e1e4ef, #f1f1f7, #ffffff);*/
+    background-image: url('assets/images/userback.png');
+    
+}
+
+.rounded-circle{
+    margin-left: 160px;
+}
+
+.round{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+
+.but{
+    padding-top:30px;
+}
+
+.tet{
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.card{
+    -webkit-box-shadow: -2px 15px 45px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 15px 45px 1px rgba(0,0,0,0.75);
+box-shadow: -2px 15px 45px 1px rgba(0,0,0,0.75);
+
+}

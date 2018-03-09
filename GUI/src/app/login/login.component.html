@@ -1,3 +1,45 @@
-<p>
-  login works!
-</p>
+<div class="body">
+  <div class="container">
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="assets/images/login1.png" class="rounded" alt="Cinque Terre">
+            <h2 class="round">LOGIN</h2>
+
+            <form>
+                <div class="form-group">
+                  <label>Email address</label>
+                  <input type="email" class="form-control" placeholder="Enter email">
+                  <small  class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label>Choose Yourself:</label><br>
+                    <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" [(ngModel)]="model">
+                        <label ngbButtonLabel class="btn-outline-primary">
+                          <input ngbButton type="radio" value="shipper"> Shipper
+                        </label>
+                        <label ngbButtonLabel class="btn-outline-primary">
+                          <input ngbButton type="radio" value="carrier"> Carrier
+                        </label>
+                      </div>
+                  </div>
+                <div class="but">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">SIGN IN</button>
+                </div>
+                <small  class="form-text text-muted tet"> Not Yet Registered?? <a [routerLink]="['/']">Register Now</a> </small>
+              </form>
+          </div>
+        </div><br><br><br><br>
+      </div>
+      <div class="col-3"></div>
+    </div>
+  </div>
+</div>
+
+
