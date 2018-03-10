@@ -14,6 +14,7 @@ import { CustomerPlaceordersComponent } from './customer-placeorders/customer-pl
 import { LoginComponent } from './login/login.component';
 import { ShipperRegisterComponent } from './shipper-register/shipper-register.component';
 import { CarrierRegisterComponent } from './carrier-register/carrier-register.component';
+import { CustViewQuotationComponent } from './cust-view-quotation/cust-view-quotation.component';
 
 const appRoutes: Routes = [
   {
@@ -43,6 +44,10 @@ const appRoutes: Routes = [
   {
     path:'carrier-register',
     component: CarrierRegisterComponent
+  },
+  {
+    path:'cust-view-quotation',
+    component: CustViewQuotationComponent
   }
 ]
 @NgModule({
@@ -56,7 +61,8 @@ const appRoutes: Routes = [
     CustomerPlaceordersComponent,
     LoginComponent,
     ShipperRegisterComponent,
-    CarrierRegisterComponent
+    CarrierRegisterComponent,
+    CustViewQuotationComponent
   ],
   imports: [
     BrowserModule,

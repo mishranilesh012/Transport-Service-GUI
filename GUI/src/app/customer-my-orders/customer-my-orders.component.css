@@ -16,3 +16,11 @@ box-shadow: 1px 12px 31px 4px rgba(0,0,0,0.75);
 #btn{
     margin-top: 20px;
 }
+.head {
+    text-align: center;
+   
+  }
+
+  .jumbotron{
+      margin-top:-50px;
+  }

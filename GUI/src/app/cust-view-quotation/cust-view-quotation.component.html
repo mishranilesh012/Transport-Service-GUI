@@ -1,0 +1,57 @@
+
+<div class="body">
+    <section class="jumbotron text-center">
+        <div class="container jumb">
+          <h1 class="jumbotron-heading" style="font-size: 60px; font-family: 'Acme', sans-serif;">Select Quotation</h1>
+        </div>
+      </section>
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+          <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>CARRIER'S IMAGE</th>
+                    <th>NAME</th>
+                    <th>CONTACT</th>
+                    <th>QUOTATION</th>
+                    <th>VEHICLE IMAGE</th>
+                    <th>BOOK</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><button type="button" class="btn btn-md btn-secondary" [routerLink]="['/cust-view-quotation']" (click)="open(content)">Carrier</button></td>
+                    <td>Anna</td>
+                    <td>123456789</td>
+                    <td>2999</td>
+                    <td><button type="button" class="btn btn-md btn-secondary" [routerLink]="['/cust-view-quotation']">Vehicle</button></td>
+                    <td><button type="button" class="btn btn-md btn-secondary" [routerLink]="['/cust-view-quotation']">Book</button></td>
+                    
+                  </tr>
+                  <ng-template #content let-c="close" let-d="dismiss">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal title</h4>
+                        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+                      </div>
+                    </ng-template>
+                </tbody>
+              </table>
+            </div>
+      </div>
+    </div>
+    
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
