@@ -1,3 +1,18 @@
-.body{
-    padding-top:80px;
+body{
+    background-image: url('assets/images/back.jpg');
+    opacity: 0.80;
+}
+
+.card-header{
+    background-color: #D5DBDB  
+    ;
+}
+.card{
+    -webkit-box-shadow: 1px 12px 31px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 12px 31px 4px rgba(0,0,0,0.75);
+box-shadow: 1px 12px 31px 4px rgba(0,0,0,0.75);
+}
+
+#btn{
+    margin-top: 20px;
 }

@@ -1,1 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+
+
+body{
+    padding-top: 55px;
+}

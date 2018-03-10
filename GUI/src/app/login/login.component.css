@@ -1,7 +1,8 @@
 .body{
     padding-top: 150px;
     /*background-image: linear-gradient(to left bottom, #bdcbe0, #d0d7e8, #e1e4ef, #f1f1f7, #ffffff);*/
-    background-image: url('assets/images/userback.png');
+    background-image: url('assets/images/back.jpg');
+    opacity: 0.80;
     
 }
 
@@ -26,8 +27,8 @@
 }
 
 .card{
-    -webkit-box-shadow: -2px 15px 45px 1px rgba(0,0,0,0.75);
--moz-box-shadow: -2px 15px 45px 1px rgba(0,0,0,0.75);
-box-shadow: -2px 15px 45px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 12px 31px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 12px 31px 4px rgba(0,0,0,0.75);
+box-shadow: 1px 12px 31px 4px rgba(0,0,0,0.75);
 
 }
