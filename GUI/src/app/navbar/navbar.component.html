@@ -18,8 +18,27 @@
               <li class="nav-item active" [routerLinkActive]="['active']">
                 <a class="nav-link text-light" [routerLink]="['/']"><i class="fa fa-users"></i> ABOUT US</a>
               </li>
-            </ul>
-            
+              <li class="nav-item active" [routerLinkActive]="['active']">
+                  <div ngbDropdown class="d-inline-block">
+                      <a class="btn text-light" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-user-circle"></i> Customer Name</a>
+                      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button class="dropdown-item">My Orders</button>
+                        <button class="dropdown-item">New Delivery</button>
+                        <button class="dropdown-item">Logout</button>
+                      </div>
+                      </div>
+              </li>
+              <li class="nav-item active" [routerLinkActive]="['active']">
+                  <div ngbDropdown class="d-inline-block">
+                      <a class="btn text-light" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-user-circle"></i> Carrier Name</a>
+                      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button class="dropdown-item">My Orders</button>
+                        <button class="dropdown-item">Add Vehicle Details</button>
+                        <button class="dropdown-item">Logout</button>
+                      </div>
+                      </div>
+              </li>
+            </ul>      
           </div>
           </div>
         </nav>
