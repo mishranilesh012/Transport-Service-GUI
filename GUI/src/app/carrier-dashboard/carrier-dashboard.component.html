@@ -1,16 +1,16 @@
 <body>
   <section class="jumbotron text-center">
       <div class="container jumb">
-        <h1 class="jumbotron-heading" style="font-size: 60px; font-family: 'Acme', sans-serif;">New Delivery</h1>
+        <h1 class="jumbotron-heading" style="font-size: 60px; font-family: 'Acme', sans-serif;">Dashboard</h1>
       </div>
     </section>
   <div class="container">
       <div class="row">
           
           <div class="col-12">
-              <div class="card">
+              <div *ngFor="let post of posts" class="card">
                   <div class="card-header">
-                    Product name
+                 {{post.name}}
                   </div>
                   <div class="card-body">
                     <div class="row">

@@ -11,10 +11,11 @@ body{
     -webkit-box-shadow: 1px 12px 31px 4px rgba(0,0,0,0.75);
 -moz-box-shadow: 1px 12px 31px 4px rgba(0,0,0,0.75);
 box-shadow: 1px 12px 31px 4px rgba(0,0,0,0.75);
+margin-bottom: 20px;
 }
 
 #btn{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .head {
     text-align: center;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-carrier-dashboard',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarrierDashboardComponent implements OnInit {
 
-  constructor() { }
+  posts:any[];
+
+  constructor(http: Http) {
+    http.get('http://jsonplaceholder.typicode.com/users').subscribe(resp => {
+    console.log(resp.json())
+    this.posts = resp.json()
+    });
+   }
 
   ngOnInit() {
   }
+
 
 }
