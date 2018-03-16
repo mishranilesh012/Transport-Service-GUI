@@ -27,8 +27,7 @@
                     </div>
                     <div class="form-group">
                       <label>Upload Images: </label>
-                       <input type="file" class="form-control-file" accept="image/*" (change)="changeListener($event)">
-                      
+                       <input type="file" class="form-control-file" (change)="handleFileSelect($event)">
                     </div>
                   <div class="form-group">
                     <label>Email address</label>
@@ -42,11 +41,13 @@
                   <div class="form-group">
                       <label>Confirm Password</label>
                       <input type="password" class="form-control" placeholder="Re-enter password">
+                      <img src="data:image/jpeg;base64,{{imgdata}}" >
                     </div>
                  
                   <div class="but">
                       <button type="submit" class="btn btn-primary btn-lg btn-block" (click)="onSubmit()">REGISTER</button>
                   </div>
+                  
                 </form>
             </div>
           </div><br><br><br><br>

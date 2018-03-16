@@ -6,13 +6,96 @@
           <h3><span id="h3">TRUCK</span>BULAO</h3>
           <p id="p1">CUSTOMERS, meet TRANSPORTERS <br>and<br> TRANSPORTERS, meets CUSTOMERS</p>
           <p id="p2">We make transporting big stuff cheap and easy by helping customers directly connect with transporters who have extra truck space.</p>
-          <button type="button" class="btn btn-light login" [routerLink]="['/login']"><i class="fa fa-user-circle"></i>  LOGIN</button>
+          <button type="button" class="btn btn-light login" [routerLink]="['/login']" (click)="newMessage()"><i class="fa fa-user-circle"></i>  LOGIN</button>
           <button type="button" class="btn btn-light register" (click)="open(content)"><i class="fa fa-address-book"></i>  REGISTER</button>
         </div>
       </ng-template>
   </ngb-carousel>
+  <section class="bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+              <h5 class="h5"><span id="fame">3.5M</span>CUSTOMERS</h5>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-3">
+              <h5 class="h5"><span id="fame">788,000</span>TRANSPORTERS</h5>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-3">
+              <h5 class="h5"><span id="fame">5.7M</span>LISTINGS</h5>
+          </div>
+        </div>
+          
+      </div> 
+  </section>
 
+  <div class="container">
+     
+        <hr class="featurette-divider">
 
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading"><span class="text-muted">TRANSPORTING WITH TRUCKBULAO</span><br>PICK YOUR PROVIDER AND PRICE</h2>
+            <p class="lead">TruckBulao’s transport marketplace gives you access to thousands of trusted providers who compete for your business, so you can pick your price and ship with confidence.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="assets/images/demo.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading"><span class="text-muted">HAULING WITH USHIP</span><br>BE THE MASTER OF YOUR DOMAIN</h2>
+            <p class="lead">With new deliveries posted every 30 seconds, there’s always money to be made on uShip. Find lucrative jobs throughout India using the latest tools, no matter what you haul.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="assets/images/carrier.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading"><span class="text-muted">TRUCKBULAO FOR BUSINESS</span><br>BUSINESS SHIPPING FOR LESS</h2>
+            <p class="lead">From booking to communications to payment, using uShip in India helps you transport freight faster, cheaper, safer, and easier so you can stay focused on your business.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="assets/images/busi.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div>
+        <section class="b">
+          <div class="container">
+              <div class="row c">
+                  <div class="col-lg-4">
+                    <img class="rounded-circle" src="assets/images/smart.jpeg" alt="Generic placeholder image" width="140" height="140">
+                    <h4>SMART TRANSPORTATION</h4>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <img class="rounded-circle" src="assets/images/guran.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h4>TRUCKBULAO GUARANTEE</h4>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <img class="rounded-circle" src="assets/images/conf.png" alt="Generic placeholder image" width="140" height="140">
+                    <h4>SHIP WITH CONFIDENCE</h4>
+                  </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+          </div>
+            
+        </section>
+      
+
+ 
+  
 
   <ng-template #content let-c="close" let-d="dismiss">
     <div class="modal-header">

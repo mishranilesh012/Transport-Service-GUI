@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import {AuthService} from './auth.service';
+import { FilterPipe} from './filter.pipe';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -21,6 +22,7 @@ import { CustViewQuotationComponent } from './cust-view-quotation/cust-view-quot
 import { CarrierDashboardComponent } from './carrier-dashboard/carrier-dashboard.component';
 import { CarrierMyordersComponent } from './carrier-myorders/carrier-myorders.component';
 import { CarrierAddvehicleComponent } from './carrier-addvehicle/carrier-addvehicle.component';
+import { HelpSupportComponent } from './help-support/help-support.component';
 
 const appRoutes: Routes = [
   {
@@ -66,6 +68,10 @@ const appRoutes: Routes = [
   {
     path:'carrier-addvehicle',
     component: CarrierAddvehicleComponent
+  },
+  {
+    path:'help-support',
+    component: HelpSupportComponent
   }
 ]
 @NgModule({
@@ -83,7 +89,9 @@ const appRoutes: Routes = [
     CustViewQuotationComponent,
     CarrierDashboardComponent,
     CarrierMyordersComponent,
-    CarrierAddvehicleComponent
+    CarrierAddvehicleComponent,
+    FilterPipe,
+    HelpSupportComponent 
   ],
   imports: [
     BrowserModule,

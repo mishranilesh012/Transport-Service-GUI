@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class AuthService {
+
+  private messageSource = new BehaviorSubject<string>("default message");
+  currentMessage = this.messageSource.asObservable();
 
   constructor(private http:Http) { }
 
@@ -12,4 +16,7 @@ export class AuthService {
     .subscribe(res => res.json());
   }
 
+  changeMessage(message: string) {
+    this.messageSource.next(message)
+  }
 }

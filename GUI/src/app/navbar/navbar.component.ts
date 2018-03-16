@@ -8,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  result:boolean;
+  user="shipper";
+  //name="Nilesh";
   
+  isloggedin(){
+    return true;
+  }
   constructor() { }
 
   ngOnInit() {

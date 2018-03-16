@@ -12,4 +12,19 @@ export class CarrierMyordersComponent implements OnInit {
   ngOnInit() {
   }
 
+  
+  refresh(): void {
+    setTimeout((data:any)=>{
+      window.location.reload();
+    },2000);
+    
+}
+  
+  
+ 
+
+
+
+  
+
 }

@@ -9,42 +9,45 @@ import { NgForm } from '@angular/forms';
 })
 export class CarrierRegisterComponent implements OnInit {
 
-  selectedFile:File = null;
   image:any;
-
+  imgdata:any;
 
   constructor(private http:HttpClient) { }
 
+  onSubmit(){
+    this.imgdata=this.getBase64();
+    console.log(this.imgdata);
+  }
+
   ngOnInit() {
   }
-  // fileEvent(event){
-  //   //this.selectedFile = <File>event.target.files[0];
-  //   console.log(event.target.files);
-  // }
   
-  changeListener($event) : void {
-    this.readThis($event.target);
-    
-  }
-  
-  readThis(inputValue: any): void {
-    let file:File = inputValue.files[0];
-    let myReader:FileReader = new FileReader();
-  
-    myReader.onloadend = (e) => {
-      this.image = myReader.result;
-    }
-    myReader.readAsDataURL(file);
-    console.log(myReader);
-  }
+handleFileSelect(evt){
+  var files = evt.target.files;
+  var file = files[0];
 
-  // onSubmit(){
+if (files && file) {
+    var reader = new FileReader();
 
-  //   const fd = new FormData();
-  //   fd.append('image', this.selectedFile, this.selectedFile.name);
-  //   console.log(fd);
-  //   this.http.post('http://jsonplaceholder.typicode.com/posts',fd).subscribe(res => {
-  //     console.log(res);
-  //   });
-  // }
+    reader.onload =this._handleReaderLoaded.bind(this);
+
+    reader.readAsBinaryString(file);
+}
+}
+
+_handleReaderLoaded(readerEvt) {
+ var binaryString = readerEvt.target.result;
+        this.image= btoa(binaryString);
+        //console.log(atob(this.image));    
+}
+
+getBase64(){
+  return this.image;
+}
+
+
+
+
+
+
 }

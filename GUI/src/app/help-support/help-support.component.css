@@ -1,0 +1,55 @@
+.head{
+    width: 100%;
+}
+
+.header-overlay{
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:1;
+    background:#225470;
+    opacity:0.50;
+  }
+
+  .content{
+      margin-bottom: 50px;
+      
+  }
+
+
+  #p1{
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  #p2{
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+    
+  }
+  h1{
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 60px;
+    font-size:100px;
+  }
+
+  #h3{
+      color: #4CF10B;
+  }
+
+  #bt1{
+    padding-left: 65px;
+  }
+
+  #bt2{
+    padding-left: 65px;
+  }
+
+.bg{
+  background-color: #D5D8DC;
+  height: 50px;
+}
+

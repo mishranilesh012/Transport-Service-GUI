@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import {AuthService} from './../auth.service';
 
 
 @Component({
@@ -11,9 +12,13 @@ export class HomeComponent implements OnInit {
 
   closeResult: string;
 
-  constructor(private modalService: NgbModal) { }
+  message:string;
+
+  constructor(private modalService: NgbModal,
+    private authService:AuthService) { }
 
   ngOnInit() {
+    this.authService.currentMessage.subscribe(message => this.message = message)
   }
 
   open(content) {
